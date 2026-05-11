@@ -15,7 +15,7 @@ export default function App() {
       <CategoryTabs />
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/trending" element={<TrendingPage />} />
+        <Route path="/prediction" element={<TrendingPage />} />
         <Route path="/e-lotto" element={<ELottoPage />} />
         <Route path="/e-sabong" element={<ESabongPage />} />
         <Route path="/arena-console" element={<Navigate to="/e-sabong" replace />} />

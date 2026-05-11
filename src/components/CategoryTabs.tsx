@@ -22,10 +22,10 @@ interface TabItem {
 
 const categories: TabItem[] = [
   { label: "Home", icon: Home, href: "/" },
-  { label: "Sportsbook", icon: Trophy, href: "/sportsbook" },
   { label: "E-Sabong", badge: { text: "New", color: "bg-rose-500" }, icon: Crown, href: "/e-sabong" },
   { label: "E-Lotto", badge: { text: "New", color: "bg-rose-500" }, icon: Ticket, href: "/e-lotto" },
-  { label: "Prediction", icon: Crosshair, href: "/trending" },
+  { label: "Sportsbook", icon: Trophy, href: "/sportsbook" },
+  { label: "Prediction", icon: Crosshair, href: "/prediction" },
   { label: "Casino", icon: Dice5, href: "/casino" },
   { label: "Live Casino", icon: Radio, href: "/live-casino" },
   { label: "Promotions", icon: Tag },
@@ -33,7 +33,7 @@ const categories: TabItem[] = [
 
 const activeTabByPath: Record<string, string> = {
   "/": "Home",
-  "/trending": "Prediction",
+  "/prediction": "Prediction",
   "/e-lotto": "E-Lotto",
   "/sportsbook": "Sportsbook",
   "/e-sabong": "E-Sabong",

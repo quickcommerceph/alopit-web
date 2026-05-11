@@ -2,6 +2,7 @@ import {
   CalendarDays,
   ChevronRight,
   Clock3,
+  Crown,
   Flame,
   Gauge,
   Play,
@@ -1002,7 +1003,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#e1334f] to-[#1f5eff] text-sm text-white shadow-[0_10px_24px_rgba(31,94,255,0.18)]">
-                <Radio className="h-4 w-4" />
+                <Trophy className="h-4 w-4" />
               </div>
               <h2 className="text-lg font-bold text-primary">Sportsbook</h2>
             </div>
@@ -1024,7 +1025,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#e1334f] to-[#1f5eff] text-sm text-white shadow-[0_10px_24px_rgba(31,94,255,0.18)]">
-                <Radio className="h-4 w-4" />
+                <Crown className="h-4 w-4" />
               </div>
               <h2 className="text-lg font-bold text-primary">E-Sabong</h2>
             </div>
@@ -1046,7 +1047,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-3">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#e1334f] to-[#1f5eff] text-sm text-white shadow-[0_10px_24px_rgba(31,94,255,0.18)]">
-                <Trophy className="h-4 w-4" />
+                <Ticket className="h-4 w-4" />
               </div>
               <h2 className="text-lg font-bold text-primary">E-Lotto</h2>
             </div>
