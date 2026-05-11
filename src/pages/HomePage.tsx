@@ -497,8 +497,8 @@ function ESabongHomeSection() {
 
   return (
     <section className="overflow-hidden rounded-[1.8rem] border border-border bg-white shadow-[0_24px_80px_rgba(19,49,112,0.06)]">
-      <div className="grid lg:grid-cols-[1fr_1.1fr]">
-        <div className="relative overflow-hidden min-h-[380px] bg-[linear-gradient(135deg,#fff5f7_0%,#ffffff_40%,#eff5ff_100%)] p-6 sm:p-7 lg:p-8">
+      <div className="grid lg:grid-cols-2">
+        <div className="relative overflow-hidden min-h-[420px] bg-[linear-gradient(135deg,#fff5f7_0%,#ffffff_40%,#eff5ff_100%)] p-6 sm:p-7 lg:p-8">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_30%,rgba(225,51,79,0.12),transparent_45%),radial-gradient(ellipse_at_80%_70%,rgba(31,94,255,0.10),transparent_45%)]" />
           <div className="absolute -bottom-20 -right-20 h-64 w-64 rounded-full border-[24px] border-[#e1334f]/[0.06]" />
           <div className="absolute -top-10 -left-10 h-40 w-40 rounded-full border-[20px] border-[#1f5eff]/[0.06]" />
@@ -517,6 +517,15 @@ function ESabongHomeSection() {
                 </span>
               </div>
 
+              <div
+                className="mb-5 h-[140px] w-full rounded-2xl ring-1 ring-border-light"
+                style={{
+                  backgroundImage: "url(/e-sabong-thumbnail.jpg)",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              />
               <p className="text-[11px] font-black uppercase tracking-[0.28em] text-tertiary">E-Sabong</p>
               <h2 className="mt-2 text-3xl font-black leading-[0.95] tracking-tight text-primary sm:text-4xl">
                 Live Rooms,
@@ -668,7 +677,7 @@ function ELottoHomeSection() {
 
   return (
     <section className="overflow-hidden rounded-[1.8rem] border border-border bg-white shadow-[0_24px_80px_rgba(19,49,112,0.06)]">
-      <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="grid lg:grid-cols-2">
         <div className="relative overflow-hidden min-h-[420px] bg-[linear-gradient(135deg,#fff5f7_0%,#ffffff_40%,#eff5ff_100%)] p-6 sm:p-7 lg:p-8">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_20%_20%,rgba(225,51,79,0.12),transparent_45%),radial-gradient(ellipse_at_80%_80%,rgba(31,94,255,0.12),transparent_45%)]" />
           <div className="absolute -top-16 -right-16 h-48 w-48 rounded-full border-[24px] border-[#e1334f]/[0.06]" />
@@ -687,6 +696,15 @@ function ELottoHomeSection() {
               </span>
             </div>
 
+            <div
+              className="mb-5 h-[140px] w-full rounded-2xl ring-1 ring-border-light"
+              style={{
+                backgroundImage: "url(/e-lotto-thumbnail.jpg)",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+              }}
+            />
             <p className="text-[11px] font-black uppercase tracking-[0.28em] text-tertiary">E-Lotto</p>
             <h2 className="mt-2 text-3xl font-black leading-[0.95] tracking-tight text-primary sm:text-4xl">
               Winning Numbers,
@@ -997,28 +1015,6 @@ export default function HomePage() {
     <div className="bg-bg" style={{ paddingTop: "50px" }}>
       <HeroBanner />
 
-      {/* Sports Section */}
-      <section className="border-t border-border bg-bg py-8">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-3">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#e1334f] to-[#1f5eff] text-sm text-white shadow-[0_10px_24px_rgba(31,94,255,0.18)]">
-                <Trophy className="h-4 w-4" />
-              </div>
-              <h2 className="text-lg font-bold text-primary">Sportsbook</h2>
-            </div>
-            <button
-              type="button"
-              onClick={() => navigate("/sportsbook")}
-              className="inline-flex shrink-0 items-center gap-1 rounded-full bg-accent-bg px-4 py-2 text-sm font-black text-accent transition hover:bg-accent hover:text-white"
-            >
-              Show All <ChevronRight className="w-4 h-4" />
-            </button>
-          </div>
-          <SportsSection />
-        </div>
-      </section>
-
       {/* E-Sabong Section */}
       <section className="border-t border-border bg-white py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -1060,6 +1056,28 @@ export default function HomePage() {
             </button>
           </div>
           <ELottoHomeSection />
+        </div>
+      </section>
+
+      {/* Sports Section */}
+      <section className="border-t border-border bg-bg py-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between mb-4">
+            <div className="flex items-center gap-3">
+              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-[#e1334f] to-[#1f5eff] text-sm text-white shadow-[0_10px_24px_rgba(31,94,255,0.18)]">
+                <Trophy className="h-4 w-4" />
+              </div>
+              <h2 className="text-lg font-bold text-primary">Sportsbook</h2>
+            </div>
+            <button
+              type="button"
+              onClick={() => navigate("/sportsbook")}
+              className="inline-flex shrink-0 items-center gap-1 rounded-full bg-accent-bg px-4 py-2 text-sm font-black text-accent transition hover:bg-accent hover:text-white"
+            >
+              Show All <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+          <SportsSection />
         </div>
       </section>
 
